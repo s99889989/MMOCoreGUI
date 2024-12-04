@@ -1,0 +1,320 @@
+Gui:
+
+  Type: 'Inventory'
+  Transparent: 0
+  Color: '#FFFFFF'
+  Image: ''
+  Width: 320
+  Height: 200
+  Position: 5
+  X: 0
+  Y: 0
+  Mask: false
+
+#GUI上的物件
+ContentList:
+
+  MenuContainer:
+    Type: Container
+    Position: 1
+    X: 0
+    Y: 0
+    Width: 320
+    Height: 20
+    ActualWidth: 320
+    ActualHeight: 20
+    Image: ''
+    Color: 110210
+    Transparent: 0
+    ScrollBackgroundColor: 0F0F0A
+    ScrollBackgroundTransparent: 255
+    ScrollColor: 1e90ff
+    ScrollTransparent: 255
+    ScrollSidebarColor: 00bfff
+    ScrollSidebarTransparent: 255
+    ScrollX: 0
+    ScrollY: 0
+    OverflowX: 1
+    OverflowY: 1
+    ScrollXDisplay: 2
+    ScrollYDisplay: 2
+    ContentList:
+
+      AttributesButton:
+        Type: Button
+        Position: 1
+        X: 0
+        Y: 0
+        Image: ''
+        Color: '#272727'
+        Transparent: 80
+        HoverColor: '#272727'
+        HoverTransparent: 120
+        ClickColor: '#272727'
+        ClickTransparent: 100
+        TextColor: '#FFFFFF'
+        Text: 'Attr'
+        Width: 44
+        Height: 20
+        ToMenu: 'Attributes'
+
+      SkillsButton:
+        Type: Button
+        Position: 1
+        X: 46
+        Y: 0
+        Color: '#272727'
+        Transparent: 200
+        HoverColor: '#272727'
+        HoverTransparent: 120
+        ClickColor: '#272727'
+        ClickTransparent: 100
+        TextColor: '#FFFFFF'
+        Text: 'Skills'
+        Width: 44
+        Height: 20
+        ToMenu: 'Skills'
+
+      FriendsButton:
+        Type: Button
+        Position: 1
+        X: 92
+        Y: 0
+        Color: '#272727'
+        Transparent: 200
+        HoverColor: '#272727'
+        HoverTransparent: 120
+        ClickColor: '#272727'
+        ClickTransparent: 100
+        TextColor: '#FFFFFF'
+        Text: 'Friends'
+        Width: 44
+        Height: 20
+        ToMenu: 'Friends'
+
+      PartyButton:
+        Type: Button
+        Position: 1
+        X: 138
+        Y: 0
+        Color: '#272727'
+        Transparent: 200
+        HoverColor: '#272727'
+        HoverTransparent: 120
+        ClickColor: '#272727'
+        ClickTransparent: 100
+        TextColor: '#FFFFFF'
+        Text: 'Party'
+        Width: 44
+        Height: 20
+        ToMenu: 'Party'
+
+      GuildButton:
+        Type: Button
+        Position: 1
+        X: 184
+        Y: 0
+        Color: '#272727'
+        Transparent: 200
+        HoverColor: '#272727'
+        HoverTransparent: 120
+        ClickColor: '#272727'
+        ClickTransparent: 100
+        TextColor: '#FFFFFF'
+        Text: 'Guild'
+        Width: 44
+        Height: 20
+        ToMenu: 'Guild'
+
+      QuestsButton:
+        Type: Button
+        Position: 1
+        X: 230
+        Y: 0
+        Color: '#272727'
+        Transparent: 200
+        HoverColor: '#272727'
+        HoverTransparent: 120
+        ClickColor: '#272727'
+        ClickTransparent: 100
+        TextColor: '#FFFFFF'
+        Text: 'Quests'
+        Width: 44
+        Height: 20
+        ToMenu: 'Quests'
+
+      WaypointsButton:
+        Type: Button
+        Position: 1
+        X: 276
+        Y: 0
+        Color: '#272727'
+        Transparent: 200
+        HoverColor: '#272727'
+        HoverTransparent: 120
+        ClickColor: '#272727'
+        ClickTransparent: 100
+        TextColor: '#FFFFFF'
+        Text: 'Teleport'
+        Width: 44
+        Height: 20
+        ToMenu: 'Waypoints'
+
+  AttributesPointContainer:
+    Type: Container
+    Position: 1
+    X: 0
+    Y: 25
+    Width: 120
+    Height: 21
+    ActualWidth: 120
+    ActualHeight: 21
+    Image: ''
+    Color: 110210
+    Transparent: 100
+    ScrollBackgroundColor: 0F0F0A
+    ScrollBackgroundTransparent: 255
+    ScrollColor: 1e90ff
+    ScrollTransparent: 255
+    ScrollSidebarColor: 00bfff
+    ScrollSidebarTransparent: 255
+    ScrollX: 0
+    ScrollY: 0
+    OverflowX: 1
+    OverflowY: 1
+    ScrollXDisplay: 2
+    ScrollYDisplay: 2
+    
+    ContentList:
+
+      AttributesPointText:
+        Type: Text
+        Position: 1
+        X: 3
+        Y: 7
+        Text:
+        - '§e Points: {total} / {attribute_points}'
+        TextSize: 1
+        Space: 18
+        TextColor: '#FFFFFF'
+
+  AttributesContainer:
+    Type: Container
+    Position: 1
+    X: 0
+    Y: 50
+    Width: 120
+    Height: 21
+    ActualWidth: 120
+    ActualHeight: 21
+    Image: ''
+    Color: 110210
+    Transparent: 100
+    ScrollBackgroundColor: 0F0F0A
+    ScrollBackgroundTransparent: 255
+    ScrollColor: 1e90ff
+    ScrollTransparent: 255
+    ScrollSidebarColor: 00bfff
+    ScrollSidebarTransparent: 255
+    ScrollX: 0
+    ScrollY: 0
+    OverflowX: 1
+    OverflowY: 1
+    ScrollXDisplay: 2
+    ScrollYDisplay: 2
+    
+    ContentList:
+
+      AttributesText:
+        Type: Text
+        Position: 1
+        X: 5
+        Y: 7
+        Text:
+        - '&a{name} &6{spent}&7/&6{max}'
+        TextSize: 1
+        Space: 18
+        TextColor: '#FFFFFF'
+
+      AttributesButton:
+        Type: Button
+        Position: 1
+        X: 102
+        Y: 3
+        Image: ''
+        Color: '#272727'
+        HoverImage: ''
+        HoverColor: 'FFAF60'
+        ClickImage: ''
+        ClickColor: 'FF8000'
+        Text: '+'
+        Transparent: 200
+        Width: 15
+        Height: 15
+
+  ContentContainer:
+    Type: Container
+    Position: 1
+    X: 125
+    Y: 25
+    Width: 195
+    Height: 175
+    ActualWidth: 195
+    ActualHeight: 175
+    Image: ''
+    Color: 110210
+    Transparent: 150
+    ScrollBackgroundColor: 0F0F0A
+    ScrollBackgroundTransparent: 255
+    ScrollColor: 1e90ff
+    ScrollTransparent: 255
+    ScrollSidebarColor: 00bfff
+    ScrollSidebarTransparent: 255
+    ScrollX: 0
+    ScrollY: 0
+    OverflowXHide: false
+    OverflowX: 1
+    OverflowY: 1
+    ScrollXDisplay: 2
+    ScrollYDisplay: 2
+    
+    ContentList:
+
+      AttributesText:
+        Type: Text
+        Position: 1
+        X: 10
+        Y: 10
+        TextSize: 1
+        Space: 10
+        TextColor: '#FFFFFF'
+        Text:
+        - '§7+{buff_weapon_damage}% Weapon Damage (§a+{total_weapon_damage}%§7)'
+        - '§7+{buff_max_health}% Max Health (§a+{total_max_health}%§7)'
+        - '§7+{buff_physical_damage}% Physical Damage (§a+{total_physical_damage}%§7)'
+        - '§7+{buff_projectile_damage}% Projectile Damage (§a+{total_projectile_damage}%§7)'
+        - '§7+{buff_attack_speed}% Attack Speed (§a+{total_attack_speed}%§7)'
+        - '§7+{buff_magic_damage}% Magic Damage (§a+{total_magic_damage}%§7)'
+        - '§7+{buff_cooldown_reduction}% Cooldown Reduction (§a+{total_cooldown_reduction}%§7)'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,377 @@
+Gui:
+
+  Type: 'Inventory'
+  Transparent: 0
+  Color: '#FFFFFF'
+  Image: ''
+  Width: 320
+  Height: 200
+  Position: 5
+  X: 0
+  Y: 0
+  Mask: false
+
+#GUI上的物件
+ContentList:
+
+  MenuContainer:
+    Type: Container
+    Position: 1
+    X: 0
+    Y: 0
+    Width: 320
+    Height: 20
+    ActualWidth: 320
+    ActualHeight: 20
+    Image: ''
+    Color: 110210
+    Transparent: 0
+    ScrollBackgroundColor: 0F0F0A
+    ScrollBackgroundTransparent: 255
+    ScrollColor: 1e90ff
+    ScrollTransparent: 255
+    ScrollSidebarColor: 00bfff
+    ScrollSidebarTransparent: 255
+    ScrollX: 0
+    ScrollY: 0
+    OverflowX: 1
+    OverflowY: 1
+    ScrollXDisplay: 2
+    ScrollYDisplay: 2
+    ContentList:
+
+      AttributesButton:
+        Type: Button
+        Position: 1
+        X: 0
+        Y: 0
+        Image: ''
+        Color: '#272727'
+        Transparent: 200
+        HoverColor: '#272727'
+        HoverTransparent: 120
+        ClickColor: '#272727'
+        ClickTransparent: 100
+        TextColor: '#FFFFFF'
+        Text: 'Attr'
+        Width: 44
+        Height: 20
+        ToMenu: 'Attributes'
+
+      SkillsButton:
+        Type: Button
+        Position: 1
+        X: 46
+        Y: 0
+        Color: '#272727'
+        Transparent: 80
+        HoverColor: '#272727'
+        HoverTransparent: 120
+        ClickColor: '#272727'
+        ClickTransparent: 100
+        TextColor: '#FFFFFF'
+        Text: 'Skills'
+        Width: 44
+        Height: 20
+        ToMenu: 'Skills'
+
+      FriendsButton:
+        Type: Button
+        Position: 1
+        X: 92
+        Y: 0
+        Color: '#272727'
+        Transparent: 200
+        HoverColor: '#272727'
+        HoverTransparent: 120
+        ClickColor: '#272727'
+        ClickTransparent: 100
+        TextColor: '#FFFFFF'
+        Text: 'Friends'
+        Width: 44
+        Height: 20
+        ToMenu: 'Friends'
+
+      PartyButton:
+        Type: Button
+        Position: 1
+        X: 138
+        Y: 0
+        Color: '#272727'
+        Transparent: 200
+        HoverColor: '#272727'
+        HoverTransparent: 120
+        ClickColor: '#272727'
+        ClickTransparent: 100
+        TextColor: '#FFFFFF'
+        Text: 'Party'
+        Width: 44
+        Height: 20
+        ToMenu: 'Party'
+
+      GuildButton:
+        Type: Button
+        Position: 1
+        X: 184
+        Y: 0
+        Color: '#272727'
+        Transparent: 200
+        HoverColor: '#272727'
+        HoverTransparent: 120
+        ClickColor: '#272727'
+        ClickTransparent: 100
+        TextColor: '#FFFFFF'
+        Text: 'Guild'
+        Width: 44
+        Height: 20
+        ToMenu: 'Guild'
+
+      QuestsButton:
+        Type: Button
+        Position: 1
+        X: 230
+        Y: 0
+        Color: '#272727'
+        Transparent: 200
+        HoverColor: '#272727'
+        HoverTransparent: 120
+        ClickColor: '#272727'
+        ClickTransparent: 100
+        TextColor: '#FFFFFF'
+        Text: 'Quests'
+        Width: 44
+        Height: 20
+        ToMenu: 'Quests'
+
+      WaypointsButton:
+        Type: Button
+        Position: 1
+        X: 276
+        Y: 0
+        Color: '#272727'
+        Transparent: 200
+        HoverColor: '#272727'
+        HoverTransparent: 120
+        ClickColor: '#272727'
+        ClickTransparent: 100
+        TextColor: '#FFFFFF'
+        Text: 'Teleport'
+        Width: 44
+        Height: 20
+        ToMenu: 'Waypoints'
+
+  SkillListContainer:
+    Type: Container
+    Position: 1
+    X: 0
+    Y: 25
+    Width: 100
+    Height: 175
+    ActualWidth: 100
+    ActualHeight: 175
+    Image: ''
+    Color: 110210
+    Transparent: 0
+    ScrollBackgroundColor: 0F0F0A
+    ScrollBackgroundTransparent: 255
+    ScrollColor: 1e90ff
+    ScrollTransparent: 255
+    ScrollSidebarColor: 00bfff
+    ScrollSidebarTransparent: 255
+    ScrollX: 0
+    ScrollY: 0
+    OverflowX: 1
+    OverflowY: 1
+    ScrollXDisplay: 2
+    ScrollYDisplay: 2
+    
+    ContentList:
+      SkillCard:
+        Type: Container
+        Position: 1
+        X: 0
+        Y: 0
+        Width: 100
+        Height: 21
+        ActualWidth: 100
+        ActualHeight: 21
+        Image: ''
+        Color: '#272727'
+        SelectColor: '#0072E3'
+        Transparent: 200
+        ScrollX: 0
+        ScrollY: 0
+        OverflowX: 1
+        OverflowY: 1
+        ScrollXDisplay: 2
+        ScrollYDisplay: 2
+        ContentList:
+          SelectButton:
+            Type: Button
+            Position: 1
+            X: 0
+            Y: 0
+            Image: ''
+            Color: '#FFFFFF'
+            HoverImage: ''
+            HoverColor: '#FFFFFF'
+            HoverTransparent: 0
+            ClickImage: ''
+            ClickColor: '#FFFFFF'
+            ClickTransparent: 0
+            Text: ''
+            Transparent: 0
+            Width: 80
+            Height: 20
+          SkillItem:
+            Type: Item
+            Position: 1
+            X: 5
+            Y: 6
+            Item: '{Count:1b,id:"minecraft:stone"}' 
+            #AngleY: 7
+            ItemSize: 1
+            
+          SkillText:
+            Type: Text
+            Position: 1
+            X: 15
+            Y: 2
+            Text:
+            - ' {skill}'
+            - ' {level}/{max_level}'
+            TextSize: 0.8
+            Space: 10
+            Width: 200
+            TextColor: '#FFFFFF'
+          
+          UpGradeButton:
+            Type: Button
+            Position: 6
+            X: -2
+            Y: 0
+            Image: ''
+            Color: '#272727'
+            HoverImage: ''
+            HoverColor: 'FFAF60'
+            ClickImage: ''
+            ClickColor: 'FF8000'
+            Text: '+'
+            Transparent: 200
+            Width: 15
+            Height: 15
+
+  SkillDirectionsContainer:
+    Type: Container
+    Position: 3
+    X: 0
+    Y: 25
+    Width: 215
+    Height: 140
+    ActualWidth: 215
+    ActualHeight: 200
+    Image: ''
+    Color: 110210
+    Transparent: 150
+    ScrollBackgroundColor: 0F0F0A
+    ScrollBackgroundTransparent: 255
+    ScrollColor: 1e90ff
+    ScrollTransparent: 255
+    ScrollSidebarColor: 00bfff
+    ScrollSidebarTransparent: 255
+    ScrollX: 0
+    ScrollY: 0
+    OverflowX: 1
+    OverflowY: 1
+    ScrollXDisplay: 2
+    ScrollYDisplay: 2
+    
+    ContentList:
+
+      SkillDirectionsText:
+        Type: Text
+        Position: 1
+        X: 5
+        Y: 10
+        Text:
+        - ''
+        TextSize: 1
+        Space: 10
+        Width: 200
+        TextColor: '#FFFFFF'
+
+  SkillBindContainer:
+    Type: Container
+    Position: 9
+    X: 0
+    Y: 0
+    Width: 215
+    Height: 30
+    ActualWidth: 215
+    ActualHeight: 30
+    Image: ''
+    Color: 110210
+    Transparent: 150
+    ScrollBackgroundColor: 0F0F0A
+    ScrollBackgroundTransparent: 255
+    ScrollColor: 1e90ff
+    ScrollTransparent: 255
+    ScrollSidebarColor: 00bfff
+    ScrollSidebarTransparent: 255
+    ScrollX: 0
+    ScrollY: 0
+    OverflowX: 1
+    OverflowY: 1
+    ScrollXDisplay: 2
+    ScrollYDisplay: 2
+    ContentList:
+      
+      SkillBindCard:
+        Type: Container
+        Position: 4
+        X: 6
+        Y: 0
+        Width: 20
+        Height: 20
+        ActualWidth: 20
+        ActualHeight: 20
+        Image: ''
+        Color: '#272727'
+        SelectColor: '#0072E3'
+        Transparent: 200
+        ScrollX: 0
+        ScrollY: 0
+        OverflowX: 1
+        OverflowY: 1
+        ScrollXDisplay: 2
+        ScrollYDisplay: 2
+        ContentList:
+          
+          SkillBindButton:
+            Type: Button
+            Position: 4
+            X: 0
+            Y: 0
+            Image: ''
+            Color: '#272727'
+            HoverImage: ''
+            HoverColor: 'FFAF60'
+            ClickImage: ''
+            ClickColor: 'FF8000'
+            Text: '+'
+            Transparent: 200
+            Width: 20
+            Height: 20
+
+          SkillItem:
+            Type: Item
+            Position: 1
+            X: 6
+            Y: 6
+            Item: '{Count:1b,id:"minecraft:stone"}' 
+            ItemSize: 1
+
+
+
+
+

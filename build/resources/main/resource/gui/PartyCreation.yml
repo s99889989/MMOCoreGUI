@@ -1,0 +1,177 @@
+Gui:
+
+  Type: 'Inventory'
+  Transparent: 0
+  Color: '#FFFFFF'
+  Image: ''
+  Width: 320
+  Height: 200
+  Position: 5
+  X: 0
+  Y: 0
+  Mask: false
+
+#GUI上的物件
+ContentList:
+
+  MenuContainer:
+    Type: Container
+    Position: 1
+    X: 0
+    Y: 0
+    Width: 320
+    Height: 20
+    ActualWidth: 320
+    ActualHeight: 20
+    Image: ''
+    Color: 110210
+    Transparent: 0
+    ScrollBackgroundColor: 0F0F0A
+    ScrollBackgroundTransparent: 255
+    ScrollColor: 1e90ff
+    ScrollTransparent: 255
+    ScrollSidebarColor: 00bfff
+    ScrollSidebarTransparent: 255
+    ScrollX: 0
+    ScrollY: 0
+    OverflowX: 1
+    OverflowY: 1
+    ScrollXDisplay: 2
+    ScrollYDisplay: 2
+    ContentList:
+
+      AttributesButton:
+        Type: Button
+        Position: 1
+        X: 0
+        Y: 0
+        Image: ''
+        Color: '#272727'
+        Transparent: 200
+        HoverColor: '#272727'
+        HoverTransparent: 120
+        ClickColor: '#272727'
+        ClickTransparent: 100
+        TextColor: '#FFFFFF'
+        Text: 'Attr'
+        Width: 44
+        Height: 20
+        ToMenu: 'Attributes'
+
+      SkillsButton:
+        Type: Button
+        Position: 1
+        X: 46
+        Y: 0
+        Color: '#272727'
+        Transparent: 200
+        HoverColor: '#272727'
+        HoverTransparent: 120
+        ClickColor: '#272727'
+        ClickTransparent: 100
+        TextColor: '#FFFFFF'
+        Text: 'Skills'
+        Width: 44
+        Height: 20
+        ToMenu: 'Skills'
+
+      FriendsButton:
+        Type: Button
+        Position: 1
+        X: 92
+        Y: 0
+        Color: '#272727'
+        Transparent: 200
+        HoverColor: '#272727'
+        HoverTransparent: 120
+        ClickColor: '#272727'
+        ClickTransparent: 100
+        TextColor: '#FFFFFF'
+        Text: 'Friends'
+        Width: 44
+        Height: 20
+        ToMenu: 'Friends'
+
+      PartyButton:
+        Type: Button
+        Position: 1
+        X: 138
+        Y: 0
+        Color: '#272727'
+        Transparent: 80
+        HoverColor: '#272727'
+        HoverTransparent: 120
+        ClickColor: '#272727'
+        ClickTransparent: 100
+        TextColor: '#FFFFFF'
+        Text: 'Party'
+        Width: 44
+        Height: 20
+        ToMenu: 'Party'
+
+      GuildButton:
+        Type: Button
+        Position: 1
+        X: 184
+        Y: 0
+        Color: '#272727'
+        Transparent: 200
+        HoverColor: '#272727'
+        HoverTransparent: 120
+        ClickColor: '#272727'
+        ClickTransparent: 100
+        TextColor: '#FFFFFF'
+        Text: 'Guild'
+        Width: 44
+        Height: 20
+        ToMenu: 'Guild'
+
+      QuestsButton:
+        Type: Button
+        Position: 1
+        X: 230
+        Y: 0
+        Color: '#272727'
+        Transparent: 200
+        HoverColor: '#272727'
+        HoverTransparent: 120
+        ClickColor: '#272727'
+        ClickTransparent: 100
+        TextColor: '#FFFFFF'
+        Text: 'Quests'
+        Width: 44
+        Height: 20
+        ToMenu: 'Quests'
+
+      WaypointsButton:
+        Type: Button
+        Position: 1
+        X: 276
+        Y: 0
+        Color: '#272727'
+        Transparent: 200
+        HoverColor: '#272727'
+        HoverTransparent: 120
+        ClickColor: '#272727'
+        ClickTransparent: 100
+        TextColor: '#FFFFFF'
+        Text: 'Teleport'
+        Width: 44
+        Height: 20
+        ToMenu: 'Waypoints'
+
+  PartyCreationButton:
+    Type: Button
+    Position: 5
+    X: 0
+    Y: 0
+    Image: ''
+    Color: '#272727'
+    HoverImage: ''
+    HoverColor: 'FFAF60'
+    ClickImage: ''
+    ClickColor: 'FF8000'
+    Text: 'Party Creation'
+    Transparent: 200
+    Width: 85
+    Height: 20

@@ -1,0 +1,12 @@
+name: MMOCoreGUI
+version: '${version}'
+main: com.daxton.mmocoregui.MMOCoreGUI
+api-version: '1.16'
+softdepend: [UnrealCore, MMOCore]
+
+folia-supported: true
+
+commands:
+  mmocoregui:
+    description: Basic instructions.
+    aliases: mmogui

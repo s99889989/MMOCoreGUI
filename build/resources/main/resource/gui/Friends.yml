@@ -1,0 +1,439 @@
+Gui:
+
+  Type: 'Inventory'
+  Transparent: 100
+  Color: '#FFFFFF'
+  Image: ''
+  Width: 320
+  Height: 200
+  Position: 5
+  X: 0
+  Y: 0
+  Mask: false
+
+#GUI上的物件
+ContentList:
+
+  MenuContainer:
+    Type: Container
+    Position: 1
+    X: 0
+    Y: 0
+    Width: 320
+    Height: 20
+    ActualWidth: 320
+    ActualHeight: 20
+    Image: ''
+    Color: 110210
+    Transparent: 0
+    ScrollBackgroundColor: 0F0F0A
+    ScrollBackgroundTransparent: 255
+    ScrollColor: 1e90ff
+    ScrollTransparent: 255
+    ScrollSidebarColor: 00bfff
+    ScrollSidebarTransparent: 255
+    ScrollX: 0
+    ScrollY: 0
+    OverflowX: 1
+    OverflowY: 1
+    ScrollXDisplay: 2
+    ScrollYDisplay: 2
+    ContentList:
+
+      AttributesButton:
+        Type: Button
+        Position: 1
+        X: 0
+        Y: 0
+        Image: ''
+        Color: '#272727'
+        Transparent: 200
+        HoverColor: '#272727'
+        HoverTransparent: 120
+        ClickColor: '#272727'
+        ClickTransparent: 100
+        TextColor: '#FFFFFF'
+        Text: 'Attr'
+        Width: 44
+        Height: 20
+        ToMenu: 'Attributes'
+
+      SkillsButton:
+        Type: Button
+        Position: 1
+        X: 46
+        Y: 0
+        Color: '#272727'
+        Transparent: 200
+        HoverColor: '#272727'
+        HoverTransparent: 120
+        ClickColor: '#272727'
+        ClickTransparent: 100
+        TextColor: '#FFFFFF'
+        Text: 'Skills'
+        Width: 44
+        Height: 20
+        ToMenu: 'Skills'
+
+      FriendsButton:
+        Type: Button
+        Position: 1
+        X: 92
+        Y: 0
+        Color: '#272727'
+        Transparent: 80
+        HoverColor: '#272727'
+        HoverTransparent: 120
+        ClickColor: '#272727'
+        ClickTransparent: 100
+        TextColor: '#FFFFFF'
+        Text: 'Friends'
+        Width: 44
+        Height: 20
+        ToMenu: 'Friends'
+
+      PartyButton:
+        Type: Button
+        Position: 1
+        X: 138
+        Y: 0
+        Color: '#272727'
+        Transparent: 200
+        HoverColor: '#272727'
+        HoverTransparent: 120
+        ClickColor: '#272727'
+        ClickTransparent: 100
+        TextColor: '#FFFFFF'
+        Text: 'Party'
+        Width: 44
+        Height: 20
+        ToMenu: 'Party'
+
+      GuildButton:
+        Type: Button
+        Position: 1
+        X: 184
+        Y: 0
+        Color: '#272727'
+        Transparent: 200
+        HoverColor: '#272727'
+        HoverTransparent: 120
+        ClickColor: '#272727'
+        ClickTransparent: 100
+        TextColor: '#FFFFFF'
+        Text: 'Guild'
+        Width: 44
+        Height: 20
+        ToMenu: 'Guild'
+
+      QuestsButton:
+        Type: Button
+        Position: 1
+        X: 230
+        Y: 0
+        Color: '#272727'
+        Transparent: 200
+        HoverColor: '#272727'
+        HoverTransparent: 120
+        ClickColor: '#272727'
+        ClickTransparent: 100
+        TextColor: '#FFFFFF'
+        Text: 'Quests'
+        Width: 44
+        Height: 20
+        ToMenu: 'Quests'
+
+      WaypointsButton:
+        Type: Button
+        Position: 1
+        X: 276
+        Y: 0
+        Color: '#272727'
+        Transparent: 200
+        HoverColor: '#272727'
+        HoverTransparent: 120
+        ClickColor: '#272727'
+        ClickTransparent: 100
+        TextColor: '#FFFFFF'
+        Text: 'Teleport'
+        Width: 44
+        Height: 20
+        ToMenu: 'Waypoints'
+
+  OptionsContainer:
+    Type: Container
+    Position: 1
+    X: 0
+    Y: 25
+    Width: 60
+    Height: 45
+    ActualWidth: 60
+    ActualHeight: 45
+    Image: ''
+    Color: 110210
+    Transparent: 0
+    ScrollBackgroundColor: 0F0F0A
+    ScrollBackgroundTransparent: 255
+    ScrollColor: 1e90ff
+    ScrollTransparent: 255
+    ScrollSidebarColor: 00bfff
+    ScrollSidebarTransparent: 255
+    ScrollX: 0
+    ScrollY: 0
+    OverflowX: 1
+    OverflowY: 1
+    ScrollXDisplay: 2
+    ScrollYDisplay: 2
+    
+    ContentList:
+
+      FriendButton:
+        Type: Button
+        Position: 1
+        X: 0
+        Y: 0
+        Image: ''
+        Color: '#272727'
+        HoverImage: ''
+        HoverColor: '#FFAF60'
+        ClickImage: ''
+        ClickColor: '#FF8000'
+        Text: 'Friends'
+        Transparent: 200
+        Width: 60
+        Height: 20
+
+      PlayerButton:
+        Type: Button
+        Position: 1
+        X: 0
+        Y: 25
+        Image: ''
+        Color: '#272727'
+        HoverImage: ''
+        HoverColor: '#FFAF60'
+        ClickImage: ''
+        ClickColor: '#FF8000'
+        Text: 'Players'
+        Transparent: 200
+        Width: 60
+        Height: 20
+
+  PlayerContainer:
+    Type: Container
+    Position: 1
+    X: 65
+    Y: 25
+    Width: 255
+    Height: 170
+    ActualWidth: 255
+    ActualHeight: 170
+    Image: ''
+    Color: 110210
+    Transparent: 50
+    ScrollBackgroundColor: 0F0F0A
+    ScrollBackgroundTransparent: 255
+    ScrollColor: 1e90ff
+    ScrollTransparent: 255
+    ScrollSidebarColor: 00bfff
+    ScrollSidebarTransparent: 255
+    ScrollX: 0
+    ScrollY: 0
+    OverflowX: 1
+    OverflowY: 1
+    ScrollXDisplay: 2
+    ScrollYDisplay: 2
+    
+    ContentList:
+
+      PlayerCardNotFriend:
+        Type: Container
+        Position: 1
+        X: 0
+        Y: 0
+        Width: 125
+        Height: 50
+        ActualWidth: 125
+        ActualHeight: 30
+        Image: ''
+        Color: '#272727'
+        SelectColor: '#0072E3'
+        Transparent: 200
+        ScrollX: 0
+        ScrollY: 0
+        OverflowX: 1
+        OverflowY: 1
+        ScrollXDisplay: 2
+        ScrollYDisplay: 2
+        ContentList:
+            
+          PlayerImage:
+            Type: Image
+            Position: 1
+            X: 2
+            Y: 2
+            Width: 25
+            Height: 25
+            Image: 'https://minotar.net/avatar/{uuid}'
+            Color: '#FFFFFF'
+            Transparent: 250
+            
+          PlayerText:
+            Type: Text
+            Position: 1
+            X: 30
+            Y: 2
+            Text:
+            - '§a[Online] §f{name}'
+            - '§7Level {level} {class}'
+            - '§7Online Since: {online_since}'
+            - ''
+            TextSize: 0.8
+            Space: 10
+            Width: 200
+            TextColor: '#FFFFFF'
+
+          AddFriendButton:
+            Type: Button
+            Position: 7
+            X: 2
+            Y: -2
+            Image: ''
+            Transparent: 50
+            Color: '#FFFFFF'
+            HoverImage: ''
+            HoverColor: '#FFFFFF'
+            HoverTransparent: 100
+            ClickImage: ''
+            ClickColor: '#FFFFFF'
+            ClickTransparent: 150
+            Text: 'Add'
+            Width: 121
+            Height: 18
+      
+      PlayerCardOnline:
+        Type: Container
+        Position: 1
+        X: 0
+        Y: 0
+        Width: 125
+        Height: 30
+        ActualWidth: 125
+        ActualHeight: 30
+        Image: ''
+        Color: '#272727'
+        SelectColor: '#0072E3'
+        Transparent: 200
+        ScrollX: 0
+        ScrollY: 0
+        OverflowX: 1
+        OverflowY: 1
+        ScrollXDisplay: 2
+        ScrollYDisplay: 2
+        ContentList:
+            
+          PlayerImage:
+            Type: Image
+            Position: 4
+            X: 2
+            Y: 0
+            Width: 25
+            Height: 25
+            Image: 'https://minotar.net/avatar/{uuid}'
+            Color: '#FFFFFF'
+            Transparent: 250
+            
+          PlayerText:
+            Type: Text
+            Position: 1
+            X: 30
+            Y: 2
+            Text:
+            - '§a[Online] §f{name}'
+            - '§7Level {level} {class}'
+            - '§7Online Since: {online_since}'
+            - ''
+            TextSize: 0.8
+            Space: 10
+            Width: 200
+            TextColor: '#FFFFFF'
+
+          AddFriendButton:
+            Type: Button
+            Position: 7
+            X: 0
+            Y: 0
+            Image: ''
+            Transparent: 0
+            Color: '#FFFFFF'
+            HoverImage: ''
+            HoverColor: '#FFFFFF'
+            HoverTransparent: 0
+            ClickImage: ''
+            ClickColor: '#FFFFFF'
+            ClickTransparent: 0
+            Text: ''
+            Width: 80
+            Height: 20
+
+      PlayerCardOffline:
+        Type: Container
+        Position: 1
+        X: 130
+        Y: 0
+        Width: 125
+        Height: 30
+        ActualWidth: 125
+        ActualHeight: 30
+        Image: ''
+        Color: '#272727'
+        SelectColor: '#0072E3'
+        Transparent: 200
+        ScrollX: 0
+        ScrollY: 0
+        OverflowX: 1
+        OverflowY: 1
+        ScrollXDisplay: 2
+        ScrollYDisplay: 2
+        ContentList:
+          SelectButton:
+            Type: Button
+            Position: 1
+            X: 0
+            Y: 0
+            Image: ''
+            Color: '#FFFFFF'
+            HoverImage: ''
+            HoverColor: '#FFFFFF'
+            HoverTransparent: 0
+            ClickImage: ''
+            ClickColor: '#FFFFFF'
+            ClickTransparent: 0
+            Text: ''
+            Transparent: 0
+            Width: 80
+            Height: 20
+            
+          PlayerImage:
+            Type: Image
+            Position: 4
+            X: 2
+            Y: 0
+            Width: 25
+            Height: 25
+            Image: 'https://minotar.net/avatar/{uuid}'
+            Color: '#FFFFFF'
+            Transparent: 250
+            
+          PlayerText:
+            Type: Text
+            Position: 1
+            X: 30
+            Y: 2
+            Text:
+            - '§c[Offline] §f{name}'
+            - '§7Last Seen: {last_seen} ago'
+            TextSize: 0.8
+            Space: 10
+            Width: 200
+            TextColor: '#FFFFFF'

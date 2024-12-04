@@ -1,0 +1,101 @@
+Gui:
+
+  Type: 'Inventory'
+  Transparent: 0
+  Color: '#FFFFFF'
+  Image: ''
+  Width: 320
+  Height: 200
+  Position: 5
+  X: 0
+  Y: 0
+  Mask: false
+
+ContentList:
+
+  TitleText:
+    Type: Text
+    Position: 2
+    X: 0
+    Y: 2
+    Text:
+    - '選擇職業'
+    TextSize: 2
+    Space: 18
+    TextColor: '#272727'
+
+  SelectClassButton:
+    Type: Button
+    Position: 1
+    X: 0
+    Y: 20
+    Image: ''
+    Color: '#272727'
+    HoverImage: ''
+    HoverColor: 'FFAF60'
+    ClickImage: ''
+    ClickColor: 'FF8000'
+    Text: ''
+    Transparent: 200
+    Width: 90
+    Height: 20
+
+  DirectionsContainer:
+    Type: Container
+    Position: 1
+    X: 95
+    Y: 20
+    Width: 250
+    Height: 150
+    ActualWidth: 250
+    ActualHeight: 340
+    Image: ''
+    Color: 110210
+    Transparent: 220
+    ScrollBackgroundColor: 0F0F0A
+    ScrollBackgroundTransparent: 255
+    ScrollColor: 1e90ff
+    ScrollTransparent: 255
+    ScrollSidebarColor: 00bfff
+    ScrollSidebarTransparent: 255
+    ScrollX: 0
+    ScrollY: 0
+    OverflowX: 1
+    OverflowY: 1
+    ScrollXDisplay: 2
+    ScrollYDisplay: 2
+    
+    ContentList:
+
+      DirectionsText:
+        Type: Text
+        Position: 1
+        X: 2
+        Y: 2
+        Text:
+        - '說明'
+        TextSize: 1
+        Space: 12
+        TextColor: '#6821a9'
+
+
+  ConfirmClassButton:
+    Type: Button
+    Position: 1
+    X: 95
+    Y: 175
+    Image: ''
+    Color: '#272727'
+    HoverImage: ''
+    HoverColor: '#000000'
+    ClickImage: ''
+    ClickColor: '#000000'
+    Text: '§lConfirm'
+    TextColor: '#FFFFFF'
+    Transparent: 200
+    Width: 250
+    Height: 20
+
+
+
+
